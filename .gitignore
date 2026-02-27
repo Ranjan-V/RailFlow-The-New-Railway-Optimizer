@@ -1,0 +1,45 @@
+# Environment & secrets — NEVER commit these
+.env
+.env.*
+!.env.example
+
+# Python virtual environment
+venv/
+env/
+ENV/
+.venv/
+
+# Trained ML model (large file, regenerates automatically)
+delay_model.pkl
+*.pkl
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# Debug scripts (not needed in repo)
+debug_optimizer.py
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# VS Code
+.vscode/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+*.log
+uvicorn.log
+
+# Data files (too large for git — share separately)
+# Comment these out if you WANT to push the data
+data/schedules.json
+data/trains.json
+data/stations.json
